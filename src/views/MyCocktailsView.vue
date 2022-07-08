@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1>Hello</h1>
+    <p>List of cocktails</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HomeView",
+  name: "MyCocktailsView",
 };
 </script>
 
