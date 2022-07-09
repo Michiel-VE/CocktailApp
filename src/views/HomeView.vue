@@ -1,12 +1,25 @@
 <template>
   <div>
-    <h1>Hello</h1>
+    <h1 @click="clicked">Hello</h1>
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { TestObj } from "@/interfaces/testObj";
+
 export default {
   name: "HomeView",
+
+  methods: {
+    clicked(): void {
+      let test: TestObj = {
+        name: "test",
+        opened: false,
+      };
+
+      console.log(test.name);
+    },
+  },
 };
 </script>
 
